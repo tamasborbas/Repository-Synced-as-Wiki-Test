@@ -1,0 +1,39 @@
+plugins {
+    id 'org.asciidoctor.jvm.convert' version '3.3.2'
+    id 'org.asciidoctor.jvm.pdf' version '3.3.2'
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+asciidoctorj {
+    version = '2.4.3'
+    attributes 'resourcesdir' : file("${asciiDocResourceDir}"),
+               'rootdir' : file("${asciiDocSourceDir}"),
+               'imagesdir': file("${asciiDocImagesDir}"),
+               'version': "${documentVersion}"
+}
+
+task copyAsciidocImages(type: Copy) {
+    from "${asciiDocImagesDir}"
+    include "*.png"
+    into "${asciiDocHtmlOutputDir}/images"
+}
+
+asciidoctor {
+    description 'Build HTML Output'
+
+    dependsOn copyAsciidocImages
+    sourceDir "${asciiDocSourceDir}"
+    // without this the included files will be searched in the project root
+    baseDirFollowsSourceDir()
+    sources {
+        include "${rootAsciiDocFileName}.asciidoc"
+    }
+
+    outputDir file("${asciiDocHtmlOutputDir}")
+
+    attributes  'imagesdir': 'images' // without this it will generate absolute paths for the images on windows
+}
