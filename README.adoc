@@ -1,3 +1,5 @@
+= README
+
 Hello There!
 
 This repoository is created to test how the repository itself can be synchronized with the wiki part. This is because of I would like to have a control on the content of the wiki which can be executed through pull requests but they are only available for the repository.
