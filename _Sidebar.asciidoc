@@ -1,7 +1,9 @@
 === link:Home.asciidoc[Home]
 
+. link:README.asciidoc[README]
+
 === Documentation
 
 . link:src/main/asciidoc/wiki-root.asciidoc[Wiki Root]
-.. link:src/main/asciidoc/wiki-sub-1.adoc[Wiki Sub 1]
-.. link:src/main/asciidoc/wiki-sub-2.adoc[Wiki Sub 2]
+.. link:src/main/asciidoc/wiki-sub-1.asciidoc[Wiki Sub 1]
+.. link:src/main/asciidoc/wiki-sub-2.asciidoc[Wiki Sub 2]

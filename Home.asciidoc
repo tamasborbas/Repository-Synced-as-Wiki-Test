@@ -4,4 +4,4 @@ Welcome to the Repository Synced as Wiki Test wiki!
 
 This is a test if the wiki's git repository can be merged with the main repository.
 
-include::README.adoc[leveloffset=+1]
+include::README.asciidoc[leveloffset=+1]

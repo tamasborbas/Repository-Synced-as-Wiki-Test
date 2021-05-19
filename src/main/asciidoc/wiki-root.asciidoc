@@ -1,5 +1,4 @@
 = Root
-ifdef::env-github,env-browser[:outfilesuffix: .adoc]
 ifdef::gradle-build[]
 :source-highlighter: rouge
 endif::[]
@@ -11,6 +10,6 @@ endif::[]
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget tincidunt sem. Duis ullamcorper lobortis ante eu lobortis. Nullam vitae pulvinar risus. Nullam est leo, bibendum ac turpis nec, posuere fermentum tortor. Fusce eleifend dolor non eleifend efficitur. Vivamus sed lorem suscipit, dapibus libero eu, aliquam sem. Donec id diam vitae sem finibus dignissim. Proin hendrerit in nisl ac pretium. Fusce in quam vitae orci consequat volutpat. Pellentesque feugiat risus vel est tempus, in cursus tortor commodo. Nunc commodo in felis ac venenatis. Nulla gravida mollis tellus a vestibulum. In vestibulum, enim ac auctor imperdiet, orci tortor eleifend ipsum, at cursus eros dolor sed turpis. Suspendisse eleifend felis vel dolor pharetra maximus. Sed sit amet maximus diam, ut euismod ex. Suspendisse a velit in enim consequat vestibulum a a nisi.
 
-include::wiki-sub-1.adoc[leveloffset=+1]
+include::wiki-sub-1.asciidoc[leveloffset=+1]
 
-include::wiki-sub-2.adoc[leveloffset=+1]
+include::wiki-sub-2.asciidoc[leveloffset=+1]
